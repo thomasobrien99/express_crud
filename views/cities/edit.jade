@@ -1,0 +1,8 @@
+h1 Edit Page
+
+form(action="/cities/#{city.id}?_method=PUT" method="POST")
+	input(type="text" name="city[name]" value='#{city.name}')
+	input(type="submit")
+form(action="/cities/#{city.id}?_method=DELETE" method="POST")
+	input(type="submit" value="Delete")
+a(href="/cities") See all the cities!
